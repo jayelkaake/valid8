@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>A Bootstrap Valid8 Form Example</h1>
+                    <div class="container">    
+                        <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <div class="panel panel-info">
+                                <form id="signupform" class="form-horizontal" role="form">
+                                <div class="panel-heading">
+                                    <div class="panel-title">Sign Up</div>
+                                </div>  
+                                <div class="panel-body" >
+                                        
+                                        <div id="signupalert" style="display:none" class="alert alert-danger">
+                                            <p>Error:</p>
+                                            <span></span>
+                                        </div>
+                                            
+                                        <div class="form-group">
+                                            <label for="email" class="col-md-3 control-label">Email</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control validate-email required" name="email" placeholder="Email Address">
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="form-group">
+                                            <label for="firstname" class="col-md-3 control-label">Full Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control validate-alpha required" name="firstname" placeholder="Full Name (letters only)">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="col-md-3 control-label">Password</label>
+                                            <div class="col-md-9">
+                                                <input type="password" class="form-control validate-alphanum required" name="passwd" placeholder="Alphanumeric password">
+                                                <!-- I don't think password should be just alphanumeric, but just doing it like this for example's sake -->
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="form-group">
+                                            <label for="icode" class="col-md-3 control-label">Invitation #</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control validate-number" name="icode" placeholder="Numeric">
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="form-group">
+                                            <label for="birthday" class="col-md-3 control-label">Date of Birth</label>
+                                            <div class="col-md-9">
+                                                <input type="date" class="form-control validate-date-au date" name="birthday" placeholder="Example: dd-mm-yyyy">
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="form-group">
+                                            <label for="website" class="col-md-3 control-label">Website</label>
+                                            <div class="col-md-9">
+                                                <input type="url" class="form-control validate-url" name="url" placeholder="www.magecredit.com">
+                                            </div>
+                                        </div>
+
+                                     </div>
+                                     <div class="panel-footer">
+                                        <button id="btn-signup" type="button" class="btn btn-info" type="submit">Sign Me Up</button>
+                                     </div>
+                                </div>
+                            </form>
+                         </div> 
+                    </div>
+                    
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="../js/valid8.js"></script>
+
+</body>
+
+</html>

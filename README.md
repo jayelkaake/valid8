@@ -11,8 +11,9 @@ To use Valid8 simply include the valid8.js file after jquery and bootstrap (if y
     <script src="js/valid8.min.js"></script>
 Then just add the CSS class name of the validation you want to each of your fields. Here are the validation classes available:
 
+
 |Class Name|Erorr Message|
-|-|-|
+|:---------|:-------------------------|
 |required | This is a required field.|
 |validate-number | Please enter a valid number in this field.|
 |validate-digits | Please use numbers only in this field. please avoid spaces or other characters such as dots or commas.|
@@ -23,6 +24,7 @@ Then just add the CSS class name of the validation you want to each of your fiel
 |validate-url | Please enter a valid URL.|
 |validate-date-au | Please use this date format: dd/mm/yyyy. For example 17/03/2006 for the 17th of March, 2006.|
 |validate-currency-dollar | Please enter a valid $ amount. For example $100.00 .|
+
 
 **That's it!**
 

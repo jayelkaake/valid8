@@ -1,5 +1,5 @@
 /**
- * Valid8 v0.9
+ * Valid8 v0.91
  * @author  Jay El-Kaake
  * @requires jQuery (pretty much any version will work). Works best with Bootstrap.
  * 
@@ -70,6 +70,12 @@ Valid8.addAll([
   ['validate-alphanum', 'Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.',
     function(v) {
       return Valid8.isEmpty(v) || !/\W/.test(v);
+    }
+  ],
+  ['validate-creditcard', 'Please enter a valid credit card number.',
+    function(v) {
+      var ccreg = /^(?:(4[0-9]{12}(?:[0-9]{3})?)|(5[1-5][0-9]{14})|(6(?:011|5[0-9]{2})[0-9]{12})|(3[47][0-9]{13})|(3(?:0[0-5]|[68][0-9])[0-9]{11})|((?:2131|1800|35[0-9]{3})[0-9]{11}))$/;
+      return Valid8.isEmpty(v) || ccreg.test(v.replace(/ /g,''));
     }
   ],
   ['validate-date', 'Please enter a valid date.',
@@ -156,7 +162,6 @@ $(document).ready(function() {
         });
 
         if (!isValid) {
-          console.log("Not valid. Msg is"+ validationMsg);
           $vmsg.html(validationMsg).show();
         } else {
           $vmsg.hide();

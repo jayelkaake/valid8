@@ -12,18 +12,19 @@ To use Valid8 simply include the valid8.js file after jquery and bootstrap (if y
 Then just add the CSS class name of the validation you want to each of your fields. Here are the validation classes available:
 
 
-|Class Name|Erorr Message|
-|:---------|:-------------------------|
-|required | This is a required field.|
-|validate-number | Please enter a valid number in this field.|
-|validate-digits | Please use numbers only in this field. please avoid spaces or other characters such as dots or commas.|
-|validate-alpha | Please use letters only (a-z) in this field.|
-|validate-alphanum | Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.|
-|validate-date | Please enter a valid date.|
-|validate-email | Please enter a valid email address. For example john@example.com.|
-|validate-url | Please enter a valid URL.|
-|validate-date-au | Please use this date format: dd/mm/yyyy. For example 17/03/2006 for the 17th of March, 2006.|
-|validate-currency-dollar | Please enter a valid $ amount. For example $100.00 .|
+|Class Name|Erorr Message| Notes|
+|:---------|:-------------------------|:-------|
+|required | This is a required field.||
+|validate-number | Please enter a valid number in this field.||
+|validate-digits | Please use numbers only in this field. please avoid spaces or other characters such as dots or commas.||
+|validate-alpha | Please use letters only (a-z) in this field.||
+|validate-alphanum | Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.||
+|validate-date | Please enter a valid date.||
+|validate-email | Please enter a valid email address. For example john@example.com.||
+|validate-url | Please enter a valid URL.||
+|validate-date-au | Please use this date format: dd/mm/yyyy. For example 17/03/2006 for the 17th of March, 2006.||
+|validate-currency-dollar | Please enter a valid $ amount. For example $100.00 .||
+|validate-credit card | Please enter a valid credit card number.|This will do some standard format checks on credit card numbers with or without spaces (doesn't matter). Obviously don't use this as your only credit card validity check.|
 
 
 **That's it!**

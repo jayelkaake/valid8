@@ -56,7 +56,7 @@ Result when not an email: ![](demo/screenshots/notemail.png?raw=true)
 ```html
 <input class="form-control required validate-url" placeholder="Your website URL. Example: http://www.magecredit.com" name="url" type="url">
 ```
-Result when not an email: ![](demo/screenshots/noturl.png?raw=true)
+Result when not a website: ![](demo/screenshots/noturl.png?raw=true)
 
 ### Signup Form Example
 We wrote a demo for you at [demo/index.html][1]

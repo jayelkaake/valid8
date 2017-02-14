@@ -1,5 +1,5 @@
 /**
- * Valid8 v0.91
+ * Valid8 v0.92
  * @author  Jay El-Kaake
  * @requires jQuery (pretty much any version will work). Works best with Bootstrap.
  * 
@@ -187,7 +187,8 @@
         }
         var $vmsg = $input.next('.validation-msg');
 
-        $($input.attr('class').split(' ')).each(function(i, className) {
+        var classes = $input.attr('class') ? $input.attr('class').split(' ') : [];
+        $(classes).each(function(i, className) {
           validationMsg = validationMsg || Valid8.getValidationMsg($input.val(), className);
           if (validationMsg) {
             isValid = false;
@@ -209,13 +210,13 @@
 
       // Check all Fields
       var checkFields = function() {
-        $form.find(':input').each(function() {
+        $form.find(':input:not(type=hidden])').each(function() {
           checkField($(this));
         });
       }
 
       // Add input checkers.
-      $form.find(':input').each(function() {
+      $form.find(':input:not(type=hidden])').each(function() {
         var $input = $(this);
         $input.change(function(e) {
           checkField($input);

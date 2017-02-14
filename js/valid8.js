@@ -1,5 +1,5 @@
 /**
- * Valid8 v1.0.1
+ * Valid8 v1.0.2
  * @author  Jay El-Kaake
  * @requires jQuery (pretty much any version will work). Works best with Bootstrap.
  * 

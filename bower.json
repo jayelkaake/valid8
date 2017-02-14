@@ -1,0 +1,16 @@
+{
+  "name": "valid8",
+  "homepage": "https://github.com/jayelkaake/valid8",
+  "description": "jQuery-based no-javascript-required no-css-required form validation. Based on Magento's prototype JS validation system.",
+  "main": "js/valid8.js",
+  "keywords": [
+    "jquery",
+    "validation",
+    "valid8",
+    "forms"
+  ],
+  "authors": [
+    "Jay El-Kaake"
+  ],
+  "license": "MIT"
+}

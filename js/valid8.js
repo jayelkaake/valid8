@@ -1,5 +1,5 @@
 /**
- * Valid8 v0.92
+ * Valid8 v1.0.1
  * @author  Jay El-Kaake
  * @requires jQuery (pretty much any version will work). Works best with Bootstrap.
  * 
@@ -210,13 +210,13 @@
 
       // Check all Fields
       var checkFields = function() {
-        $form.find(':input:not(type=hidden])').each(function() {
+        $form.find(':input:not(input[type=hidden])').each(function() {
           checkField($(this));
         });
       }
 
       // Add input checkers.
-      $form.find(':input:not(type=hidden])').each(function() {
+      $form.find(':input:not(input[type=hidden])').each(function() {
         var $input = $(this);
         $input.change(function(e) {
           checkField($input);

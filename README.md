@@ -47,12 +47,15 @@ Here are the validation classes available:
 
 ##Examples
 ###Email Address Example
-
-    <input class="form-control required validate-email" placeholder="Login E-mail" name="email" type="email">
+```html
+<input class="form-control required validate-email" placeholder="Login E-mail" name="email" type="email">
+```
 Result when not an email: ![](demo/screenshots/notemail.png?raw=true)
 
 ###Website URL Example
-    <input class="form-control required validate-url" placeholder="Your website URL. Example: http://www.magecredit.com" name="url" type="url">
+```html
+<input class="form-control required validate-url" placeholder="Your website URL. Example: http://www.magecredit.com" name="url" type="url">
+```
 Result when not an email: ![](demo/screenshots/noturl.png?raw=true)
 
 ### Signup Form Example
